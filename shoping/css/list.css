@@ -1,0 +1,115 @@
+/* list列表页专有样式 */
+.nav {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_list ul li a:hover {
+    background-color: #c81523;
+    color: #fff;
+    transition: all;
+}
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 49px;
+}
+.sk_con ul li:last-child a::after {
+    content: '\ea42';
+    font-family: 'icomoon';
+    padding-left: 5px;
+}
+/* 列表内容区域 */
+.sk_bd {
+	margin-top: 25px;
+}
+.sk_bd ul {
+	width: 1212px;
+}
+.sk_goods {
+	position: relative;
+	float: left;
+	width: 288px;
+	height: 458px;
+	border: 1px solid transparent;
+	margin: 0  12px 15px 0;
+}
+.sk_goods:hover {
+	border: 1px solid #e12228;
+}
+.sk_goods_title {
+	font-size: 14px;
+	color: #666;
+	font-weight: normal;
+	padding: 10px;
+}
+.sk_goods_price {
+	padding: 0 10px;
+}
+.sk_goods_price em {
+	font-size: 22px;
+	color: #e60012;
+}
+.sk_goods_price del {
+	font-size: 14px;
+	font-weight: 700;
+	color: #a4a4a4;
+}
+.sk_goods_progress {
+	padding: 0 10px;
+}
+.bar {
+	display: inline-block;
+	width: 130px;
+	height: 10px;
+	border: 1px solid #b1191a;
+	vertical-align: middle;
+	margin: 0 5px;
+	border-radius: 5px;
+}
+.bar_in {
+	width: 87%;
+	height: 10px;
+	background-color: #f24349;
+}
+.sk_goods_progress em,.sk_goods_progress i {
+	color: #f24349;
+}
+.sk_goods_buy {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #b1191a;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
