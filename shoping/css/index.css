@@ -5,9 +5,59 @@
     margin-top: 10px;
 }
 .focus {
+    position: relative;
     float: left;
     width: 721px;
     height: 455px;
+    overflow: hidden;
+}
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+.focus ul li {
+    float: left;
+}
+.arrow-l,
+.arrow-r {
+    display: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	width: 24px;
+	height: 40px;
+	background: rgba(0, 0, 0, .3);
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+.arrow-r {
+	right: 0;
+}
+.circle {
+	position: absolute;
+	bottom: 10px;
+	left: 50px;
+}
+.circle li {
+	float: left;
+	width: 8px;
+	height: 8px;
+	/*background-color: #fff;*/
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	margin: 0 3px;
+	border-radius: 50%;
+	/*鼠标经过显示小手*/
+	cursor: pointer;
+
+}
+.current {
+	background-color: #fff;
 }
 .newsflash {
     float: right;
@@ -125,6 +175,7 @@
     background-color: #5c5251;
     text-align: center;
     padding-top: 30px;
+    cursor: pointer;
 }
 .recom-bd {
     float: left;
@@ -132,6 +183,7 @@
 .recom-bd ul li img {
     width: 248px;
     height: 163px;
+    cursor: pointer;
 }
 .recom-bd ul li {
     position: relative;
@@ -174,8 +226,9 @@
     text-align: center;
 }
 .favie_lis ul li img {
-    width: 240px;
-    height: 163px;
+    width: 235px;
+    height: 161px;
+    cursor: pointer;
 }
 .favie_lis ul li {
     float: left;
@@ -226,12 +279,19 @@
     width: 210px;
     background-color: #f9f9f9;
     text-align: center;
+    
 }
 .col_210 ul {
     padding-left: 12px;
 }
+.box_bd li {
+    overflow: hidden;
+}
 .col_210 a img {
     margin-top: 20px;
+}
+.col_210 a img,.col_329 img:hover {
+    transform: translateY(-5px);
 }
 .col_210 ul li {
     float: left;
@@ -241,6 +301,7 @@
     text-align: center;
     line-height: 33px;
     margin-right: 10px;
+    z-index: 2;
 }
 .col_329 {
     width: 329px;
@@ -252,8 +313,56 @@
 .col_219 {
     width: 219px;
 }
+.box_bd img{
+    transition: all .3s;
+    overflow: hidden;
+}
+.box_bd img:hover {
+    margin-left: 8px;
+}
+.favie_lis img {
+    transition: all .3s;
+}
+.favie_lis img:hover {
+    margin-left: 8px;
+}
 .bb {
     /* a如果包含有宽度的盒子，啊需要装换为块级元素 */
     display: block;
     border-bottom: 1px solid #ccc;
 }
+/*电梯导航*/
+.fixedtool {
+	position: fixed;
+	top: 150px;
+	left: 50%;
+	margin-left: -676px;
+	width: 66px;
+    background-color: #fff;
+    display: none;
+}
+.fixedtool li {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.fixedtool .current {
+    background-color: #c81623;
+	color: #fff;
+}
+.fixedtool p {
+    display: none;
+    position: absolute;
+    left: 66px;
+    top: 0;
+    width: 200px;
+    height: 300px;
+    background-color: purple;
+}
+/* .fixedtool .current {
+	background-color: #c81623;
+	color: #fff;
+} */
